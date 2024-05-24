@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body onload="firstSpeak()">
+    <div>
+        <form class="w-full "> 
+       
+   
+       <div class="md:flex md:items-center mb-6">
+         <div class="md:w-1/3">
+           <label class="block text-black-500 font-bold md:text-right mb-1 md:mb-0 pr-4" for="inline-full-name">
+             <p class="test">Speak and Spell</p>
+           </label>
+   
+         </div>
+         <br/>
+         
+         <div class="md:w-2/3">
+           <input class="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-10/12 py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-blue-500" id="textIn" placeholder="Enter word" type="text">
+         </div>
+       </div>
+       <div class="md:flex md:items-center mb-6">
+         <div class="md:w-1/3">
+   
+         </div>
+         <div class="md:w-2/3">
+         
+         </div>
+       </div>
+       <div class="md:flex md:items-center mb-6">
+         <div class="md:w-1/3"></div>
+         <label class="md:w-* block text-gray-500 font-bold">
+   
+         </label>
+       </div>
+       <div class="md:flex md:items-center">
+         <div class="md:w-1/3"></div>
+         <div class="md:w-2/3">
+           <button class="shadow bg-blue-500 hover:bg-blue-400 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded" type="button" onclick="onSubmit()">
+             Submit 
+           </button>
+           <button  class="shadow bg-blue-500 hover:bg-blue-400 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded" type="button" onclick="reapeatWord()">
+             Repeat Word
+           </button>
+           <button class="shadow bg-blue-500 hover:bg-blue-400 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded" type="button" onclick="reapeatSen()">
+             Repeat Sentence 
+           </button>
+         </div>
+       </div>
+     </form>
+     </div>
+     <script src="{{ url_for('static', filename='main.js') }}"></script>
+    </body>
+</html>

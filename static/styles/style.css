@@ -1,0 +1,25 @@
+.bluebutton {
+    background-color: blue; /* Green */
+    border: none;
+    color: white;
+
+    padding: 10px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 6px;
+
+  }
+  .bluebutton:hover
+  {
+    
+    background-color: white;
+    transition: 0.7s;
+    opacity: 90%;
+  }
+  h1
+  {
+    color: aqua;
+  }
+  
