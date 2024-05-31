@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+
+</head>
+<body onload="onSubLoad()">
+
+    
+        <style>
+            code {
+                    background-color: #eee;
+                    border-radius: 3px;
+                    font-family: courier, monospace;
+                    padding: 0 3px;
+                }
+        </style>
+        <h1   style="display: none;"  id="in"  class="text-red-500 text-6xl font-mono	font-bold">Incorrect</h1>
+        <h1  style="display: none;" id="co" class="text-green-500 text-6xl font-mono	font-bold">Correct</h1>
+        <br/>
+      <div>
+        <h1>Your answer</h1>
+        <code id="yWord">There is no milk in stock right now</code>
+        <h1>The Correct Answer</h1>
+        <code id="cWord">There is no milk in stock right now</code>
+        <h1>The Difrence</h1>
+        <code>There is no milk in stock right now</code>
+      </div>
+      <a href="/spell">
+      <button  class="shadow bg-blue-500 hover:bg-blue-400 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded" type="button" onclick="reapeatWord()">
+        Next
+      </button>
+    </a>
+      <script src="{{ url_for('static', filename='main.js') }}"></script>
+
+</body>
+</html>
